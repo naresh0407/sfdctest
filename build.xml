@@ -12,7 +12,7 @@
     
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
         <classpath>
-            <pathelement location="../ant-salesforce.jar" />        	
+            <pathelement location="ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
 	
@@ -30,7 +30,7 @@
 
     <!-- Shows check only; never actually saves to the server -->
     <target name="deployCodeCheckOnly">
-      <sf:deploy username="${sf.username}" password="${sf.password}"  serverurl="${sf.serverurl}"  deployRoot="../src" checkOnly="true"/>
+      <sf:deploy username="${sf.username}" password="${sf.password}"  serverurl="${sf.serverurl}"  deployRoot="src" checkOnly="true"/>
     </target>
 	
 	
